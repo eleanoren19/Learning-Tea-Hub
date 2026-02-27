@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Learning Hub</title>
+    <link rel="stylesheet" href="progress.css">
+
+    <!--linking the font here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,700;1,9..40,300;1,9..40,700&display=swap" rel="stylesheet">
+    <!--linking the google font link for the sidebar icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    
+</head>
+<body>
+    <!--aside bar, used typically for creating sidebars in html-->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="images/teahub.png" alt="logo">
+            <h2>TeaHub</h2>
+        </div>
+        <ul class="sidebar-links">
+            <h4>
+                <span>Main Menu</span> <!--this is where all of the other webpages will be-->
+            </h4>
+            <li>
+                <a href="index.html"><span class="material-symbols-outlined">dashboard</span><p class="aclass">Dashboard</p></a>
+            </li>
+            <li>
+                <a href="schedule.html"><span class="material-symbols-outlined">overview</span><p class="aclass">Schedule</p></a>
+            </li>
+            <li>
+                <a href="progress.html"><span class="material-symbols-outlined">monitoring</span><p class="aclass">Progress</p></a>
+            </li>
+            <li>
+                <a href="resources.html"><span class="material-symbols-outlined">folder</span><p class="aclass">Resources</p></a>
+            </li>
+            <br>
+            <span><img src="images/honey.png" width="42px" height="auto"></span>
+        </ul>
+    </aside>
+
+    <!--now working on the actual stuff in the website-->
+    <div class="skill">
+        <h3><strong>Your progress:</strong></h3>
+        
+        <li><h4>Tea Etiquette</h4>
+            <span class="bar"><span class="teaet"></span></span>
+        </li>
+        <li><h4>Types of tea</h4>
+            <span class="bar"><span class="teatype"></span></span>
+        </li>
+        <li><h4>Matcha grades</h4>
+            <span class="bar"><span class="matgrad"></span></span>
+        </li>
+        <li><h4>Tea pour</h4>
+            <span class="bar"><span class="teapour"></span></span>
+        </li>
+    </div>
+    <center><div class="progress"> <!--progress bars-->
+        <h3>Completed activites</h3>
+        <div class="classgrp">
+            <div class="leftclass">
+                <div class="classes">
+                    <img src="images/greentea.png" width="150px" height="auto">
+                    <br><br>
+                    <p>Matcha for beginners</p>
+                </div>
+                <div class="classes">
+                    <img src="images/teacups.png" width="130px" height="auto">
+                    <p>Teacup stacking</p>
+                </div>
+            </div>
+
+            <div class="rightclass">
+                <div class="classes">
+                    <img src="images/honey.png" width="150px" height="auto">
+                    <br><br>
+                    <p>Honey measurements</p>
+                </div>
+                <div class="classes">
+                    <br><br>
+                    <img src="images/tea.png" width="150px" height="auto">
+                    <br><br>
+                    <p>Tea sifting</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="images/progress.png" width="70%" height="auto">
+    </center>
+    <center><a href="schedule.html"><button class="schedulebutton">Schedule</button></a></center>
+</body>
+</html>

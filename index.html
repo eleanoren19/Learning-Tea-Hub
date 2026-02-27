@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Learning Hub</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!--linking the font here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,700;1,9..40,300;1,9..40,700&display=swap" rel="stylesheet">
+    <!--linking the google font link for the sidebar icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    
+</head>
+<body>
+    <!--aside bar, used typically for creating sidebars in html-->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="images/teahub.png" alt="logo">
+            <h2>TeaHub</h2>
+        </div>
+        <ul class="sidebar-links">
+            <h4>
+                <span>Main Menu</span> <!--this is where all of the other webpages will be-->
+            </h4>
+            <li>
+                <a href="index.html"><span class="material-symbols-outlined">dashboard</span><p class="aclass">Dashboard</p></a>
+            </li>
+            <li>
+                <a href="schedule.html"><span class="material-symbols-outlined">overview</span><p class="aclass">Schedule</p></a>
+            </li>
+            <li>
+                <a href="progress.html"><span class="material-symbols-outlined">monitoring</span><p class="aclass">Progress</p></a>
+            </li>
+            <li>
+                <a href="resources.html"><span class="material-symbols-outlined">folder</span><p class="aclass">Resources</p></a>
+            </li>
+            <br>
+            <span><img src="images/honey.png" width="42px" height="auto"></span>
+        </ul>
+    </aside>
+
+    <!--now focusing on the actual body of the webpage-->
+
+        <div class="largebodyleft">
+            <div class="card">
+                <img class="borderimg" src="images/borderimg.png" width="30%">
+                <div class="bottom-txt">
+                    <h3>TeaHub</h3>
+                    <p>Learn all about tea!</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <img class="iconimg" src="images/leaf.png" width="65px" height="auto">
+                <img class="iconimg" src="images/lemon.png" width="65px" height="auto">
+                <img class="iconimg" src="images/greentea.png" width="65px" height="auto">
+                <img class="iconimg" src="images/teacup.png" width="65px" height="auto">
+            </div>
+        </div>
+        <center><h3 class="article"><strong>Articles</strong> to learn more</h3></center>
+        <div class="bottomcen">
+            
+            <div class="baricons"> <!--making the icons on the side-->
+                <div class="iconbardiv">
+                    <a href="https://naokimatcha.com/blogs/recipes/how-to-make-matcha-tea-easily" target="_blank"><img src="images/matchaicon.png" width="120px" height="auto" class="iconbar"></a>
+                    <h4><strong>Matcha brewing</strong></h4>
+                </div>
+                <div class="iconbardiv">
+                    <a href="https://www.theteaspot.com/pages/tea-traditions?srsltid=AfmBOopq_kZ3DePZDLyA9KgygmLoC69Bf4cK5g66z86xLrfsNAfBP-9Z" target="_blank"><img src="images/teaicon.png" width="120px" height="auto" class="iconbar"></a>
+                    <h4><strong>Tea customs</strong></h4>
+                </div>
+                <div class="iconbardiv">
+                    <a href="https://thebrooklynteacup.com/blogs/blog/teacup-handles-shapes?srsltid=AfmBOoq0crnJVyP-R2PDdydvITX39vToZhPCsidsuIaVbX7O4QL52389" target="_blank"><img src="images/teacupsicon.png" width="120px" height="auto" class="iconbar"></a>
+                    <h4><strong>Types of teacups</strong></h4>
+                </div>
+                <div class="iconbardiv">
+                    <a href="https://www.vam.ac.uk/articles/teapots-through-time?srsltid=AfmBOopNcYF6W4RlQcK2ZD0RbDLdxx2M6RCuko7WbGtXyPRQkM_pM8Jd" target="_blank"><img src="images/teabrewicon.png" width="120px" height="auto" class="iconbar"></a>
+                    <h4><strong>Teapot history</strong></h4>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <center><img src="images/cookies-and-tea.png" width="70%" height="auto" class="cookieimg"></center>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/*importing  font google fonts */
+*{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+    min-height: 100vh;
+    background: #fbcc81;
+}
+h3,p{
+    color: white;
+}
+/*-------------------------------------------*/
+
+/*styling for the sidebar*/
+ul{ /*getting rid of the ul padding so the icons arent so far*/
+    padding-inline-start: 0;
+}
+.sidebar{ /*setting the dimensions*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 85px;
+
+    display: flex; /*this is the 3 lines that hide the overflow before a user hovers over the sidebar*/
+    flex-direction: column;
+    overflow-x: hidden;
+
+    background: #f8b549;
+    padding: 15px 10px;
+    transition: all 0.4s ease; /*this is how the sidebar will stretch out*/
+    z-index: 3; /*gives the sidebar priority over the other elements on webpage*/
+}
+.sidebar:hover{ /*when it hovers, it goes to full width*/
+    width: 260px;
+}
+.sidebar-header{
+    display: flex;
+    border-radius: 50%;
+}
+.sidebar-header img{
+    width: 42px;
+    height: 47px;
+    border-radius: 50%;
+}
+.sidebar-header h2{
+    font-size: 1.25rem;
+    color: #fff;
+    margin-left: 23px;
+}
+/*making the h4 name transition to be seen*/
+.sidebar-links h4 span{
+    opacity: 0;
+}
+.sidebar:hover .sidebar-links h4 span{
+    opacity: 1;
+}
+/*making the text names transition to be seen*/
+.sidebar-links .aclass{
+    opacity: 0;
+}
+.sidebar:hover .sidebar-links .aclass{
+    opacity: 1;
+}
+/*making the logo name transition to be seen*/
+.sidebar h2{
+    opacity: 0;
+}
+.sidebar:hover h2{
+    opacity: 1;
+}
+/*stylistic choices of the text*/
+.sidebar-links h4{
+    color: #fff;
+    margin: 10px 0;
+    white-space: nowrap;
+}
+.sidebar-links{
+    list-style: none;
+    margin-top: 20px;
+    height: 80%;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.sidebar-links li a{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    color: #fff;
+    padding: 15px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+/*when hovering, the different texts will turn to a lighter shade*/
+.sidebar-links li a:hover{
+    background: #f7bc5d;
+    color: #fff;
+    border-radius: 4px;
+}
+/*just moving the images to be even with the icons*/
+.sidebar img{
+    padding-left: 15px;
+}
+
+/*---------------------------------*/
+
+/*working on the live sessions*/
+/* session card */
+.largecard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.sessioncard{
+    background:#f7bc5d;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 6px 16px rgba(0,0,0,0.25);
+    display:inline-block;
+    margin:30px;
+    width:500px;
+}
+
+.sessioncard iframe{
+    width:100%;
+    height:280px;
+    border:none;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+button{
+    margin-top:10px;
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    background:#fbcc81;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ffd289;
+}
+
+.statuslive{
+    color:red;
+    font-weight:bold;
+}
+.ytembed{
+    border-radius: 20px;
+}
+
+/*now working on the embed and different groups*/
+.bottomdiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.lrgstudygrps{
+    display: flex;
+}
+.studygroup{
+    width: 300px;
+    height: auto;
+    box-shadow:0 6px 16px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    background: #f7bc5d;
+    padding: 30px;
+    margin: 40px;
+}

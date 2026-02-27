@@ -1,0 +1,206 @@
+/*importing  font google fonts */
+*{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+    min-height: 100vh;
+    background: #fbcc81;
+}
+
+/*-------------------------------------------*/
+
+/*styling for the sidebar*/
+ul{ /*getting rid of the ul padding so the icons arent so far*/
+    padding-inline-start: 0;
+}
+.sidebar{ /*setting the dimensions*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 85px;
+
+    display: flex; /*this is the 3 lines that hide the overflow before a user hovers over the sidebar*/
+    flex-direction: column;
+    overflow-x: hidden;
+
+    background: #f8b549;
+    padding: 15px 10px;
+    transition: all 0.4s ease; /*this is how the sidebar will stretch out*/
+    z-index: 3; /*gives the sidebar priority over the other elements on webpage*/
+}
+.sidebar:hover{ /*when it hovers, it goes to full width*/
+    width: 260px;
+}
+.sidebar-header{
+    display: flex;
+    border-radius: 50%;
+}
+.sidebar-header img{
+    width: 42px;
+    height: 47px;
+    border-radius: 50%;
+}
+.sidebar-header h2{
+    font-size: 1.25rem;
+    color: #fff;
+    margin-left: 23px;
+}
+/*making the h4 name transition to be seen*/
+.sidebar-links h4 span{
+    opacity: 0;
+}
+.sidebar:hover .sidebar-links h4 span{
+    opacity: 1;
+}
+/*making the text names transition to be seen*/
+.sidebar-links .aclass{
+    opacity: 0;
+}
+.sidebar:hover .sidebar-links .aclass{
+    opacity: 1;
+}
+/*making the logo name transition to be seen*/
+.sidebar h2{
+    opacity: 0;
+}
+.sidebar:hover h2{
+    opacity: 1;
+}
+/*stylistic choices of the text*/
+.sidebar-links h4{
+    color: #fff;
+    margin: 10px 0;
+    white-space: nowrap;
+}
+.sidebar-links{
+    list-style: none;
+    margin-top: 20px;
+    height: 80%;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.sidebar-links li a{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    color: #fff;
+    padding: 15px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+/*when hovering, the different texts will turn to a lighter shade*/
+.sidebar-links li a:hover{
+    background: #f7bc5d;
+    color: #fff;
+    border-radius: 4px;
+}
+/*just moving the images to be even with the icons*/
+.sidebar img{
+    padding-left: 15px;
+}
+
+/*-------------------------------------------*/
+/*working on the teahub card*/
+.largebodyleft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    width: 25%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 150px;
+    margin-top: 100px;
+    box-shadow: 5px 5px 15px #7d643993;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0; 
+}
+
+.bottom-txt{ /*placing the text over the image*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #fabd5a;
+    color: white;
+    padding: 25px;
+
+    border-radius: 20px 20px 0 0;
+}
+.bottom-txt h3{
+    margin: 0;
+    font-size: 25px;
+}
+.bottom-txt p{
+    margin: 5px 0 0;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+
+/*working on the side icons now*/
+.bottomcen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons{
+    /*making it line up with the image*/
+    margin-top: 100px;
+    margin-left: 70px;
+    
+    /*making it a column*/
+    display: flex;
+    flex-direction: column;
+}
+.iconimg img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.iconimg{
+    margin-bottom: 35px;
+    border-radius: 10px;
+}
+
+/*working on the bottom articles now*/
+h3 strong{
+    font-weight: 700;
+    color: #cb881d;
+}
+.article{
+    color: #cb881d;
+    padding-top: 20px;
+}
+.baricons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconbardiv{
+    margin-left: 30px;
+}
+h4{
+    color: #b57818;
+}
+.iconbar{
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #7d643959;
+}
+
+/*working on the cookie question*/
+.cookieimg{
+    filter: drop-shadow(5px 5px 15px #7d643959);
+}
