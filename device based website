@@ -1,0 +1,21 @@
+concept of device based websites: 
+
+function checkDeviceAccess() {
+    const deviceID = localStorage.getItem("myApp_deviceID");
+    
+    if (deviceID) {
+        console.log("Device recognized: " + deviceID);
+        // Load the 'logged in' version of your site
+    } else {
+        console.log("New device. Please register this device.");
+        // Show a 'Register Device' button
+    }
+}
+
+function registerDevice() {
+    const newID = "DEV-" + Math.random().toString(36).substr(2, 9);
+    localStorage.setItem("myApp_deviceID", newID);
+    alert("Device registered successfully!");
+}
+
+concept is about how there can be an id key automatically assigned with any device, and detemrining if the id is present for the device, if not new account
